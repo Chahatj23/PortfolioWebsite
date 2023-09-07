@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chahat-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="left">Chahat's Portfolio.</div>
+      <div class="right">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href=#secondSection>About</a></li>
+          <li><a href="#workExperience">Work Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+    <!-- <button class="hamburger">
+      <div class="bar"></div>
+    </button> -->
+  </header>
+  <main>
+    
+    <section class="first">
+      <div class="leftSection">
+        <div>Hi ,My Name is <span class="purple"><b>Chahat</b></span></div>
+        <div>and I am a Passionate</div>
+        <h4><span id="element"></span></h4>
+        <div class="btnBox">
+          <div class="wrapper">
+            <a class="button" href="#">Download Resume</a>
+        </div>
+        
+        <!-- Filter: https://css-tricks.com/gooey-effect/ -->
+        <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+                <filter id="goo"><feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />    
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+          <!-- <button class="btn">Download Resume</button>
+          <button class="btn2">GitHub -->
+            <!-- <img src="github.svg" alt="github-icon"> -->
+          </button>
+        </div>
+      </div>
+      <div class="rightSection">
+        <img src="bg.png" alt="" />
+      </div>
+    </section>
+    <!-- <hr /> -->
+    <section id="secondSection"class="secondSection">
+    
+
+      <div class="leftSection2">
+        <H1>ABOUT</H1>
+        <t></t>
+        <p>Meet Chahat, an ingenious Electrical Engineer ignited by a fervent passion for Software Engineering.
+          Seamlessly blending hardware and software realms, His pioneers cutting-edge solutions. From efficient
+          electrical systems to user-centric software, And thrives on tech's forefront. With meticulous detail and
+          unwavering standards, projects achieve excellence in functionality and user experience. Whether it's smart IoT
+          or intricate algorithms, His prowess ensures forward-looking, transformative solutions. Partner with
+          him today for a synergy of electrical engineering and software finesse that sparks innovation.</p>
+      </div>
+      <div class="rightSection2">
+        <img src="Myphoto.jpg" alt="" />
+      </div>
+    </section>
+    <!-- <hr /> -->
+
+    <!-- <section id="thirdSection" class="thirdSection">
+      <div class="leftSection3">
+        <h1>Work Experiences</h1>
+       
+        
+      </div>
+      
+    </section> -->
+    <section id="workExperience" class="work-experience">
+      <h2>Work Experience</h2>
+      <!-- <h1>Work Experiences</h1> -->
+        <div class="box">
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+            <div class="vertical"></div>
+        </div>
+      <!-- Work Experience Entry 1 -->
+      <div class="experience-entry">
+        <h3>Associate Web Development Intern, NeoDocto Inc</h3>
+        <!-- <div class="timeline"></div> -->
+        <p>June 2023 - Aug 2023</p>
+        <ul>
+          <li>Explored the concept of handling an E-commerce website for pharmacy products.</li>
+          <li>Learned and worked on web scraping, a valuable skill in data extraction and analysis.</li>
+          <li>Lead and mentored a team of 18 people and learned Digital marketing.</li>
+        </ul>
+      </div>
+    
+      <!-- Work Experience Entry 2 -->
+      <!-- TEDx Work Experience Entry -->
+      <div class="experience-entry" id="experience-entry-tedx">
+        <h3>Content Writer: TEDx Prahaladnagar</h3>
+        <!-- <div class="timeline"></div> -->
+        <p>June 2020 - Jan 2021</p>
+        <ul>
+          <li>Honed exceptional writing skills and attention to detail.</li>
+          <li>Focused on inspiring and empowering individuals.</li>
+          <li>Optimized processes and drove positive change.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      
+      <!-- Project Entry 1 - Musify App -->
+      <div class="project-entry">
+        <h3>Musify App - Music Player</h3>
+        <p>The Musify App is a music player built in Java for Android Studio. It exemplifies efficient management of music-related data using SQLite. The app demonstrates a strong understanding of the Android app lifecycle, ensuring optimal resource usage and background playback. Its user-centric focus reflects in delivering a seamless and enjoyable music experience.</p>
+      </div>
+    
+      <!-- Project Entry 2 - Logger -->
+      <div class="project-entry">
+        <h3>Logger - Basic Login Interface</h3>
+        <p>The Logger project is a basic login interface built using Java and XML. It provides login functionality with options for Firebase OTP and Google Sign-In. The app also includes user registration using mobile and Gmail credentials. Local data storage is managed using SQLite for a smooth user experience.</p>
+      </div>
+    
+      <!-- Project Entry 3 - Student Record Management System -->
+      <div class="project-entry">
+        <h3>Student Record Management System</h3>
+        <p>The Student Record Management System is a C++ project that utilizes data structure and algorithms (DSA) for efficient operations on student data. It allows adding, searching, updating, and deleting student records, making it a powerful tool for managing student information.</p>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <div class="contact-form">
+        <form action='/send-email' method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+  </main>
+
+  
+    <footer>
+     <h3>Chahat-Portfolio</h3>
+      <div class="footer-section contact">
+        <h4>Contact Me</h4>
+        
+          <div>Email: chahatj06@gmail.com</div>
+          <div>Phone: +91 7728839931</div>
+         <div>LinkedIn: &nbsp <a href="https://www.linkedin.com/in/chahat-jain-96b1b51b9/">Chahat Jain</a></div> 
+        
+      </div>
+      
+      
+    </footer>
+
+
+  <script>
+
+    var typed = new Typed("#element", {
+      strings: [
+        "Software Developer",
+        "Web Developer",
+        "&amp; Android Developer",
+      ],
+      typeSpeed: 50,
+      smartBackspace: true,
+      loop: true,
+      onComplete: (self) => {},
+
+    });
+</script>
+
+  <script src="index.js"></script>
+  <script src="client.js"></script>
+
+</body>
+
+</html>
