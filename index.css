@@ -17,7 +17,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .purple {
-   color: rgb(57, 188, 208);
+   /* color: rgb(57, 188, 208); */
+   color: #0ef;
 }
 .header{
   display: flex;
@@ -80,7 +81,7 @@ nav ul li a:hover {
 
 .leftSection {
   font-size: 3rem;
-  margin-left: 140px;
+  margin-left: 20vh;
   width: 100%;
   display: flex;
   flex-direction: column; 
@@ -89,10 +90,30 @@ nav ul li a:hover {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
-.rightSection img {
-  width: 80%;
+.links a{
+  display: inline-flex;
+  justify-content: center;
   align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #0ef;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #0ef;
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
 }
+.links a:hover{
+  background: #0ef;
+  color: #fff; 
+  box-shadow: 0 0 20px #0ef;
+}
+.rightSection img {
+  width: 100%;
+  width: 681px;
+  padding-inline: 8px;
+ }
 .wrapper {
   padding: 1.5rem 0;
   filter: url('#goo');
@@ -142,55 +163,6 @@ nav ul li a:hover {
 .button:hover:after {
   transform: none;
 }
-/* .leftSection .btn{
- 
-  margin-bottom: 12px;
-  padding: 11px;
-    font-size: 17px;
-    /* background-color: rgb(63, 40, 164); */
-    /* background-color: rgb(20, 84, 145); */
-      /* color: white; */
-    /* border: 2px solid white;
-    border-radius: 7px;
-    cursor: pointer;
-}  */
-
-/* .btn ::before{
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 100%;
-  background: rgb(145, 20, 20);
-  z-index: -1;
-  transition: 0.5s;
-  transform: scaleX(0);
-  transform-origin: left;
-}
-.btn :hover::before{
-  transform: scaleX(1);
-  transform-origin: right;
-  background-color: aliceblue;
-} */
-/* .leftSection .btn2{
-    display: inline-flex;
-    font-size: 17px;
-    margin-bottom: 12px;
-    padding: 11px;
-    /* background-color: rgb(63, 40, 164); */
-    /* background-color: rgb(20, 84, 145);
-    color: white;
-    border: 2px solid white;
-    border-radius: 7px;
-    cursor: pointer;
-}
-.leftSection .btn2 .img{
-  display: inline;
-  width: 10px; /* Adjust the size of the image */
-  /* height: 10px; /* Adjust the size of the image 
-  margin-right: 5px; /* Add spacing between image and text }*/
-   
-
-
 .secondSection {
   margin-top: 50px;
   display: flex;
@@ -199,17 +171,7 @@ nav ul li a:hover {
   max-width: 80vw;
   height: 80vh;
   margin-left: 150px;
-  margin-bottom: 80px;
-}
-.thirdSection {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 200px 0;
-  max-width: 80vw;
-  margin-bottom: 100px;
-  height: 80vh;
-}
+ }
 .leftSection2 {
   font-size: 1.2rem;
   /* margin-left: 80px;
@@ -223,23 +185,10 @@ nav ul li a:hover {
   flex-direction: column; 
   justify-content: center;
 }
-.leftSection3{
-  font-size: 1.2rem;
-  margin-left: 80px;
-  width: 100%; 
-  margin: 0 auto;
-  height: 200px;
-  max-width: 100%;
-  max-height: 100%;
-  /* display: flex; */
-  /* flex-direction: column;  */
-  /* justify-content: center; */
-
-}
 .rightSection2 img {
-  
-  width: 63%;
+   width: 63%;
   margin-left: 162px;
+  margin-top: 200px;
   align-items: center;
 }
 
@@ -251,11 +200,6 @@ nav ul li a:hover {
 .secondSection h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-}
-.thirdSection h1 {
-  margin-top: 200px;
-  font-size: 2rem;
-
 }
 footer{
   background-color: rgb(2, 2, 21);
@@ -280,7 +224,7 @@ footer{
   justify-content: space-between;
 }
 .footer-section.contact div:hover{
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: rgb(57, 188, 208);
 }
 .footer-section.contact h4 {
@@ -296,23 +240,18 @@ footer{
 .footer-section.contact a:hover {
   text-decoration: underline;
 }
-
-
-  .box{
+ .box{
     display: flex;
     flex-direction: column;
     margin: 0 20px;
   }
-.secondSection .vertical{
-  height: 100px;
-  width: 1px;
-  background: white;
-}
 /* Work Experience Section */
 .work-experience {
  padding: 20px;
+  max-width: 1200px;
+  /* margin: 50px auto; */
  margin-left: 145px;
- margin-bottom: 100px;
+ margin-bottom: 50px;
 }
 .work-experience h2{
   font-size: 2rem;
@@ -339,7 +278,10 @@ footer{
  margin-left: 20px;
   margin-bottom: 49px;
 }
-
+.experience-entry p{
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
 .experience-entry ul li {
   margin-bottom: 15px;
 }
@@ -371,7 +313,7 @@ footer{
 }
 
 .projects h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 20px;
 }
 
@@ -460,14 +402,6 @@ button[type="submit"]:hover {
   background-color: #005d99;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  
-}
-
-
-
-
 @media screen and (max-width: 1343px) {
   .body{
     min-width: fit-content;
@@ -475,16 +409,15 @@ button[type="submit"]:hover {
  .first{
     flex-direction: column-reverse;
     align-items: center;
+    left: 0%;
     margin-bottom: 180px;
- }
- .secondSection{
-  flex-direction: column-reverse;
-  height: fit-content;
-  margin-bottom: 180px; 
- }
- .buttonSection{
-  flex-direction: column;
- }
+   }
+   .buttonSection{
+    flex-direction: column;
+    margin-right: 15vh;
+   }
+ 
+
  .right{
   display: none; /* Hide the navigation links on small screens */
   flex-direction: column;
@@ -495,71 +428,99 @@ button[type="submit"]:hover {
   width: 100%;
   padding: 10px;
  }
- .leftSection{
-  width: 100% !important;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
- }
- .leftSection .btnSection{
-  width: 100% !important;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8rem;
- }
- /* .navbar.active {
-  display: flex; /* Show navigation links when active */
-
- .hamburger-menu {
-  display: flex; /* Show hamburger menu on small screens */
-  right: 0;
-} 
-.left{
+ .left{
   margin-left: 0px;
 }
-
+.leftSection{
+  width: 80% !important;
+  align-items: center;
+  margin-right: 15vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.8rem;
+ }
   .rightSection{
-    width: 781px !important;
-    margin-top: 400px;
+    width: 481px !important;
+    margin-top: 150px;
+    margin-right: 15vh;
     display: flex;
     justify-content: center;
   } 
   .rightSection img{
     padding: 40px;
-    width: 100%;
+    width: 80%;
+   margin-left: 100px;
     justify-content: center;
     align-items: center;
   } 
+
+ .leftSection .btnSection{
+  width: 100% !important;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-right: 15vh;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.5rem;
+ }
+.navbar.active {
+  display: flex; 
+  /* Show navigation links when active */
+}
+ .hamburger-menu {
+  display: flex; 
+  /* Show hamburger menu on small screens */
+    right: 0;
+} 
+.secondSection{
+  flex-direction: column-reverse;
+  margin-bottom: 280px; 
+  margin-right: 15vh;
+  margin-left: 0px;
+ }
   .leftSection2{
     width: 100% !important;
-    margin-top: 50px; 
+    margin-top: 150px; 
     align-items: center;
+    margin-left: 0px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     font-size: 0.9rem;
    }
+   .links a:hover{
+    background: #0ef;
+    color: #fff; 
+    box-shadow: 0 0 300px #0ef;
+  }
    .rightSection2{
-    width: 400px !important;
-    margin-top: 100px !important;
-    margin-right: 18vh;
+    width: 300px !important;
+    margin-top: 150px !important;
+    margin-right: 15vh;
     display: flex;
     justify-content: center;
   }
-
+  .rightSection2 .img{
+    width: 80%;
+    padding: 40px;
+    margin-left:50px;
+    margin-top: 400px;
+    justify-content: center;
+    align-items: center;
+   }
   .rightSection2 .h1{
     justify-content: center;
   }
-  
-  
+
+  .work-experience{
+    margin-left: 0px;
+    margin-top: 450px;
+    margin-right: 0px;
+  }
 .right{
   padding: 10px;
-}
-body{
-  min-width: fit-content;
 }
 .projects {
   padding: 10px;
@@ -584,19 +545,58 @@ body{
 .project-entry p {
   font-size: 0.9rem;
 }
-
+.footer-section.contact{
+  flex-direction: column;
+  margin-left: 0px;
+  margin-right: 0px;
 }
-@media screen and(max-width: 468px) {
+footer{
+  height: 100%;
+  background-color: rgb(2, 2, 21);
+  font-size: 0.8rem;
+}
+.footer-section.contact div:hover{
+  font-size: 0.9rem;
+  color: rgb(57, 188, 208);
+}
+}
+@media screen and(max-width: 531px) {
+  .body{
+    min-width: fit-content;
+  }
   .first{
     flex-direction: column-reverse;
-    
+    align-items: center;
+    left: 0%;
+    margin-bottom: 80px;
  }
-.body{
-  min-width: fit-content;
+ .header{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+ left: 0px;
+ width: 80%;
+  background-color: aliceblue;
 }
- .secondSection{
-  flex-direction: column-reverse;
+.leftSection{
+  width: 70% !important;
+  align-items: center;
+  margin-right: 15vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
  }
+ .rightSection{
+  width: 100%;
+  margin-top: 50px;
+  margin-right: 15vh;
+  display: flex;
+  justify-content: center;
+} 
+.left{
+  left: 0%;
+}
  .buttonSection{
   flex-direction: column;
  }
@@ -626,14 +626,49 @@ body{
   flex-direction: column;
   font-size: 0.8rem;
  }
+ .rightSection2 .img{
+  width: 80%;
+  padding: 400px;
+  margin-left:50px;
+  justify-content: center;
+  align-items: center;
+ }
+  .rightSection img{
+    padding: 20px;
+    width: 100%;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+ .work-experience{
+  margin-left: 0px;
+  margin-right: 15vh;
+  margin-top: 850px !important;
+  max-width: 100%;
+  max-height: 100%;
+ }
+ .work-experience h2{
+  font-size: 0.8rem;
+  margin-top: 20px;
+ }
+ .work-experience h3{
+  font-size: 0.8rem;
+  margin-top: 20px;
+ }
  /* .navbar.active .right {
   display: flex; /* Show navigation links when active */
  .hamburger-menu {
   display: flex; /* Show hamburger menu on small screens */
-} */
+} 
+.secondSection{
+  flex-direction: column-reverse;
+  margin-bottom: 100%;
+ }
+
   .leftSection2{
     width: 100% !important;
-    margin-top: 200px; 
+    margin-top: 100px !important; 
+    margin-bottom: 300px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -641,8 +676,9 @@ body{
     font-size: 0.9rem;
    }
    .rightSection2{
-    width: 421px !important;
+    width: 321px !important;
     margin-top: 100px !important;
+    margin-bottom: 300px !important;
     display: flex;
     justify-content: center;
     margin-right:10vh;
@@ -696,3 +732,56 @@ body{
  content: '';
  transition: 0.4s;
   }  */
+  @media screen and (max-width:425px){
+    .first {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 230px;
+    
+    }
+    .leftSection {
+      font-size: 1.3rem;
+      margin-left: 15vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column; 
+      justify-content: center;
+     padding-left: 1.5rem;
+      padding-right: 1.5rem;
+     }     
+  @media screen and (max-width: 280px) {
+    .body{
+      min-width: fit-content;
+      width: auto;
+    }
+    .first {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 30px; /* Adjust the margin as needed */
+    width: 100%;
+    }
+    .rightSection {
+      margin-top: 200px;
+      font-size: 0.8rem; /* Adjust the font size as needed */
+    }
+  
+    .secondSection {
+      flex-direction: column-reverse; /* Reverse the order on small screens */
+      margin-top: 30px; /* Adjust the margin as needed */
+      margin-left: 0; /* Reset the left margin */
+    }
+   .rightSection2{
+    font-size: 0.8rem; /* Adjust the font size as needed */
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
+   .leftSection2{
+    font-size: 0.8rem;
+    margin-bottom: 200px;
+   }
+   footer{
+    width: 100%;
+    background-color: rgb(2, 2, 21);
+   }
+  }
+  
